@@ -1,0 +1,18 @@
+version: '2'
+services:
+    rabbit-mq:
+        container_name: rabbit-mq
+        image: rabbitmq:3.7-management
+        expose:
+            - 5672
+            - 15672
+        ports:
+            - 5672:5672
+            - 15672:15672
+        networks:
+            - event-driven-spring-boot-network
+        logging:
+            driver: json-file
+networks:
+    event-driven-spring-boot-network:
+        driver: bridge
