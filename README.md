@@ -1,6 +1,6 @@
 ### Context
 - This repository is an implementation of the [Ambassador Architecture](https://jdutreve.medium.com/monolith-or-microservices-neither-combine-both-with-integrated-microservices-5265594c3d59) (aka Integrated Microservices).  
-- There is a [companion article]() that details some interesting parts.
+- There is a [companion article](https://jdutreve.medium.com/a-java-implementation-of-integrated-microservices-aka-the-ambassador-architecture-3999fa313318) that details some interesting parts.
 - The use case is not that important, and means to create/update a customer with a credit rating score.
 - It uses Spring Boot, Spring Cloud Stream, RabbitMQ, and the ELK stack for Observability.
 - Every state is stored **in-memory only**. This is NOT production code, but instead is an example of how to create integrated microservices.
